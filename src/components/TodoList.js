@@ -5,7 +5,7 @@ function TodoList({todoList, deleteTodo}){
     const listItem = todoList.map(
         (item)=> 
         <li key={item.id}>{item.description} 
-        <button onClick={()=> deleteTodo(item.id)}>DELETE</button></li> 
+        <button className="btn btn-primary" onClick={()=> deleteTodo(item.id)}>DELETE</button></li> 
     )
     return (
         <div>
